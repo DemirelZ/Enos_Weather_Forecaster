@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5", // veya projenize uygun başka bir hedef
+    "module": "commonjs", // veya projenize uygun başka bir modül türü
+    "jsx": "react-jsx", // JSX desteği için 'react' veya 'react-jsx'
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"], // TypeScript'in derlemesi gereken dosya ve dizinler
+  "exclude": ["node_modules", "build"] // Dışarıda bırakılacak dosya ve dizinler
+}

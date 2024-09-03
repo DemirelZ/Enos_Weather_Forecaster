@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Weather Forecast Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This Weather Forecast Application is a React-based project designed to provide users with a detailed weather forecast for any city. It allows users to search for a city and view both the weekly weather forecast and detailed weather data for a specific day. The app leverages modern web technologies and practices, such as API integration, state management, component-based architecture, and responsive design, to deliver a smooth user experience across all devices.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **City Search**: Users can search for any city to get weather data.
+- **Weekly Weather Forecast**: Displays a 7-day weather forecast, including the days of the week, dates, lowest and highest temperatures.
+- **Detailed Daily Weather**: Shows detailed weather information for the current day or any selected day from the weekly forecast.
+- **Data Caching**: Caches weather data to improve performance and reduce redundant API requests.
+- **Error Handling**: Provides feedback to users when an invalid city is entered or when data retrieval fails.
+- **Loading Indicators**: Displays loading spinners while fetching data to enhance user experience.
+- **Responsive Design**: The application is fully responsive, ensuring a seamless experience on all screen sizes, from mobile devices to desktop computers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static typing.
+- **CSS**: For styling the application, including responsive design.
+- **API Integration**: Fetches weather data from external APIs.
+- **State Management**: Manages the application's state using React's `useState` hook.
+- **Modular Components**: Breaks down the UI into reusable and maintainable components.
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```plaintext
+.
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── api
+│   │   └── fetchData.ts         # Functions for fetching weather data from APIs
+│   ├── assets
+│   │   └── images               # Image assets used in the project
+│   ├── components
+│   │   ├── customSearchInput.tsx # Search input component
+│   │   ├── header.tsx           # Header component
+│   │   ├── weatherIcon.tsx      # Weather icon component
+│   │   ├── loading.tsx          # Loading spinner component
+│   │   └── ...
+│   ├── utils
+│   │   └── functions.ts         # Utility functions like date formatting and capitalization
+│   ├── App.tsx                  # Main application component
+│   ├── types.ts                 # TypeScript types used in the project
+│   ├── index.tsx                # Entry point for the React application
+│   └── ...
+└── README.md                    # Project documentation
+```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Type a city name into the search input and press `Enter` to fetch the weather data.
+- Both the current day's weather information and a 7-day weather forecast will be displayed.
+- If the city is not found or there's an error, an appropriate message will be displayed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please feel free to submit a Pull Request.
