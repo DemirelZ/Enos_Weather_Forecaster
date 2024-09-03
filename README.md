@@ -60,6 +60,6 @@ This Weather Forecast Application is a React-based project designed to provide u
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Find the screen gif below
+## Screen gif
 
 ![](/ewf.gif)
