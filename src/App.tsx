@@ -92,6 +92,7 @@ function App() {
 
   const handleSearch = () => {
     if (city) {
+      setError(false);
       fetchWeatherDataForAWeek(city);
       fetchWeatherDataForCurrentDay(city);
     }
